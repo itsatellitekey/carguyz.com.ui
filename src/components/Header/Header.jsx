@@ -73,7 +73,7 @@ const Header = () => {
         {/* book now btn - Desktop */}
         <div className="hidden md:block">
           <Link to="/booking">
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-primary text-white h-10 px-4 py-2 cta-button">
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-white h-10 px-4 py-2 cta-button">
               Book Now
             </button>
           </Link>
@@ -91,7 +91,7 @@ const Header = () => {
             <Link to="/blog" className="text-gray-800 hover:text-secondary font-medium transition">Blog</Link>
             <Link to="/contact" className="text-gray-800 hover:text-secondary font-medium transition">Contact</Link>
             <Link to="/booking">
-              <button className="mt-2 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-primary text-white h-10 px-4 py-2 w-full">
+              <button className="mt-2 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-white h-10 px-4 py-2 w-full">
                 Book Now
               </button>
             </Link>

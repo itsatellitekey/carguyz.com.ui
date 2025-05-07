@@ -4,6 +4,31 @@ import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection.jsx";
 import ServiceCard from "../components/ServiceCard/ServiceCard.jsx";
 import FaqItem from "../components/FaqItem/FaqItem.jsx";
+import { CarFront, Droplets, Sparkles } from "lucide-react";
+
+const services = [
+    {
+      title: "Exterior Wash",
+      description:
+        "Complete exterior cleaning including bodywork, wheels, windows, and tires. Includes wax protection for added shine.",
+      price: "₹299",
+      icon: CarFront,
+    },
+    {
+      title: "Interior Detailing",
+      description:
+        "Vacuuming, upholstery cleaning, dashboard polishing, and odor removal to refresh your cabin.",
+      price: "₹499",
+      icon: Droplets,
+    },
+    {
+      title: "Full Car Spa",
+      description:
+        "Premium inside-out treatment for your car. A full detailing package to bring back that new car feel.",
+      price: "₹999",
+      icon: Sparkles,
+    },
+  ];
 
 export default function Services() {
     return (
@@ -18,7 +43,17 @@ export default function Services() {
             {/* services section */}
             <section className="py-20 bg-light">
                 <div className="container mx-auto px-4">
-                    <ServiceCard />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {services.map((service, index) => (
+                            <ServiceCard
+                                key={index}
+                                title={service.title}
+                                description={service.description}
+                                price={service.price}
+                                Icon={service.icon}
+                            />
+                        ))}
+                    </div>
                 </div>
 
             </section>
@@ -30,7 +65,7 @@ export default function Services() {
                         <h2 className="text-3xl font-bold mb-4 text-white">Want a Custom Quote?</h2>
                         <p className="text-lg text-gray-200 mb-8 mx-auto">Need something specific or have multiple cars? We can create a customized cleaning plan just for you.</p>
                         <Link to="/contact" className="mt-6">
-                            <button className="bg-secondary hover:bg-secondary/90 text-white rounded-md px-8 py-3 text-sm font-medium transition-all duration-300 hover:shadow-lg cursor-pointer">
+                            <button className="bg-secondary hover:bg-secondary/90 text-white rounded-lg px-8 py-3 text-sm font-medium transition-all duration-300 hover:shadow-lg cursor-pointer">
                                 Get in Touch
                             </button>
                         </Link>
