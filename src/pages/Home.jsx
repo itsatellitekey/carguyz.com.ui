@@ -30,7 +30,7 @@ export default function Home() {
                         <div className="flex flex-wrap gap-4">
                             <Link href="/booking">
                                 <button
-                                    className="cta-button border-2 border-primary animate-fade-in bg-primary cursor-pointer text-primary-foreground px-4 py-2 rounded-md transition-colors text-sm font-medium"
+                                    className="cta-button border-2 border-primary animate-fade-in bg-primary cursor-pointer text-primary-foreground px-4 py-2 rounded-lg transition-colors text-sm font-medium"
                                     style={{ animationDelay: "0.3s" }}
                                 >
                                     Book Now
@@ -39,7 +39,7 @@ export default function Home() {
 
                             <Link href="/services">
                                 <button
-                                    className="cta-button animate-fade-in border-2 border-white cursor-pointer text-white hover:bg-white hover:text-primary font-medium py-2 px-8 rounded-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 text-sm"
+                                    className="cta-button animate-fade-in border-2 border-white cursor-pointer text-white hover:bg-white hover:text-primary font-medium py-2 px-8 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 text-sm"
                                     style={{ animationDelay: "0.4s" }}
                                 >
                                     See Our Services
