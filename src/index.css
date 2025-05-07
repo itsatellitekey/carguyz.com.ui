@@ -1,0 +1,131 @@
+/* tailwind css */
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-primary {
+  color: #1D3557;
+}
+
+.text-secondary {
+  color: #2EC4B6;
+}
+
+.bg-primary {
+  background-color: #1D3557;
+}
+
+.bg-secondary {
+  background-color: #2EC4B6;
+}
+
+.border-secondary {
+  border-color: #2EC4B6;
+}
+
+.border-primary {
+  border-color: #1D3557;
+}
+
+.text-primary {
+  color: #1d3557;
+}
+
+.text-secondary {
+  color: #2EC4B6;
+}
+
+.hover\:text-secondary {
+  &:hover {
+    @media (hover: hover) {
+      color: #2EC4B6;
+    }
+  }
+}
+
+.hover\:bg-secondary\/90:hover {
+  background-color: #2ec4b6e6;
+}
+
+.bg-light {
+  background-color: #f9fafb;
+}
+
+.subtitle-color {
+  color: #4b5563;
+}
+
+/* home page banner */
+.banner-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-banner.jpg');
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+/*fade-in annimation*/
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out both;
+}
+
+/* testimonial slider */
+.testimonials .slick-prev,
+.testimonials .slick-next {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  background: transparent;
+  border-radius: 50%;
+  margin-top: 32px;
+  top: 100%;
+}
+
+.testimonials .slick-prev {
+  left: 45%;
+}
+
+.testimonials .slick-next {
+  right: 45%;
+}
+
+.testimonials .slick-prev:before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 19-7-7 7-7'/%3E%3Cpath d='M19 12H5'/%3E%3C/svg%3E");
+}
+
+.testimonials .slick-prev:before,
+.testimonials .slick-next:before {
+  font-size: 16px;
+  color: transparent;
+}
+
+.testimonials .slick-next:before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 5 7 7-7 7'/%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E");
+}
+
+/* home feature cards section */
+section.feature-cards {
+  background-color: #f4f8f9;
+}
