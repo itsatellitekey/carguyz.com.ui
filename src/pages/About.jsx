@@ -30,7 +30,7 @@ const values = [
 export default function About() {
     return (
 
-        <main class="pt-16">
+        <div class="pt-16">
             {/* Hero Section */}
             <HeroSection
                 title="About Us"
@@ -113,7 +113,7 @@ export default function About() {
 
             </section>
 
-        </main>
+        </div>
 
     );
 }

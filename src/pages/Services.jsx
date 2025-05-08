@@ -33,7 +33,7 @@ const services = [
 export default function Services() {
     return (
 
-        <main class="pt-16">
+        <div class="pt-16">
             {/* Hero Section */}
             <HeroSection
                 title="Our Services"
@@ -110,7 +110,7 @@ export default function Services() {
 
             </section>
 
-        </main>
+        </div>
 
     );
 }

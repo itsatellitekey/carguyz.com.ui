@@ -6,7 +6,7 @@ import TestimonialSlider from "../components/TestimonialSlider/TestimonialSlider
 export default function Home() {
     return (
 
-        <main>
+        <div>
             {/* Banner Section */}
             <section className="relative bg-cover bg-center h-screen flex items-center banner-section">
                 <div className="container mx-auto px-4 h-full flex items-center">
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
                 <TestimonialSlider />
             </section>
-        </main>
+        </div>
 
     );
 }

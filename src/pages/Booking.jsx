@@ -5,7 +5,7 @@ import HeroSection from "../components/HeroSection/HeroSection.jsx";
 export default function Booking() {
   return (
 
-    <main class="pt-16">
+    <div class="pt-16">
       {/* Hero Section */}
       <HeroSection
         title="Book Your Car Cleaning"
@@ -26,7 +26,8 @@ export default function Booking() {
                     id="name"
                     name="name"
                     placeholder="Your full name"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    required
                   />
                 </div>
 
@@ -38,7 +39,8 @@ export default function Booking() {
                     id="phone"
                     name="phone"
                     placeholder="Your phone number"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    required
                   />
                 </div>
 
@@ -48,7 +50,7 @@ export default function Booking() {
                   <select
                     id="car-type"
                     name="car_type"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm">
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm">
                     <option value="">Select car type</option>
                     <option value="hatchback">Hatchback</option>
                     <option value="sedan">Sedan</option>
@@ -63,7 +65,7 @@ export default function Booking() {
                   <select
                     id="service-type"
                     name="service_type"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                   >
                     <option value="">Select service</option>
                     <option value="exterior">Exterior Wash (₹299)</option>
@@ -81,7 +83,8 @@ export default function Booking() {
                     type="date"
                     id="preferred-date"
                     name="preferred_date"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    required
                   />
                 </div>
 
@@ -91,7 +94,7 @@ export default function Booking() {
                   <select
                     id="preferred-time"
                     name="preferred_time"
-                    class="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                   >
                     <option value="">Select time</option>
                     <option value="8am">8:00 AM</option>
@@ -116,7 +119,8 @@ export default function Booking() {
                   placeholder="Your full address where we should come"
                   aria-describedby="full-address"
                   aria-invalid="false"
-                  className="flex h-10 w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                  className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                  required
                 />
                 <p
                   className="text-sm text-gray-500"
@@ -139,7 +143,7 @@ export default function Booking() {
                   placeholder="Any specific instructions for our team"
                   aria-describedby="special-notes-description"
                   aria-invalid="false"
-                  className="flex min-h-[80px] w-full rounded-lg border-input border border-gray-300 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                  className="flex min-h-[80px] w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                 ></textarea>
               </div>
 
@@ -155,11 +159,7 @@ export default function Booking() {
           </div>
         </div>
       </section>
-
-
-
-
-    </main>
+    </div>
 
   );
 }
