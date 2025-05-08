@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import HeroSection from "../components/HeroSection/HeroSection.jsx";
-import ServiceCard from "../components/ServiceCard/ServiceCard.jsx";
+import CardItem from "../components/CardItem/CardItem.jsx";
 import FaqItem from "../components/FaqItem/FaqItem.jsx";
 import { CarFront, Droplets, Sparkles } from "lucide-react";
 
@@ -41,16 +41,17 @@ export default function Services() {
             />
 
             {/* services section */}
-            <section className="py-20 bg-light">
+            <section className="py-20 bg-light services-section">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
-                            <ServiceCard
+                            <CardItem
                                 key={index}
                                 title={service.title}
                                 description={service.description}
                                 price={service.price}
                                 Icon={service.icon}
+                                showButton={true}
                             />
                         ))}
                     </div>
