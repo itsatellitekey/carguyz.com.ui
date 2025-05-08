@@ -7,19 +7,19 @@ const testimonials = [
     name: "Rohit Sharma",
     location: "Delhi NCR",
     text: "CarGuyz transformed my dusty car into a showroom piece! Professional team, amazing results, and the convenience of them coming to my home is unbeatable. Will definitely use again!",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/images/user1.jpg",
   },
   {
     name: "Priya Patel",
     location: "Bengaluru",
     text: "I was skeptical about doorstep car washing, but CarGuyz changed my mind! Their service is prompt, thorough, and uses minimal water. My car hasn't looked this good in years!",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "/images/user2.jpg",
   },
   {
     name: "Ajay Verma",
     location: "Hyderabad",
     text: "As a busy professional, finding time to get my car cleaned was always a challenge. CarGuyz solved that problem! Their team is punctual, efficient, and delivers exceptional results.",
-    image: "https://randomuser.me/api/portraits/men/62.jpg",
+    image: "/images/user3.jpg",
   },
 ];
 
