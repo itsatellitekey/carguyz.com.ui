@@ -5,52 +5,52 @@ import HeroSection from "../components/HeroSection/HeroSection.jsx";
 export default function Booking() {
   return (
 
-    <div class="pt-16">
+    <div className="pt-16">
       {/* Hero Section */}
       <HeroSection
         title="Book Your Car Cleaning"
-        description="Schedule a convenient time for your doorstep car cleaning service."
+        subtitle="Schedule a convenient time for your doorstep car cleaning service."
       />
 
       {/* booking form section */}
-      <section class="py-16 bg-light booking-form">
-        <div className="container mx-auto px-4">
-          <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-6 md:p-10">
-            <form class="space-y-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 upper-form">
+      <section className="py-16 bg-light booking-form">
+        <div className="w-full max-w-screen-xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-6 md:p-10">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 upper-form">
                 {/* <!-- Name --> */}
-                <div class="space-y-2">
-                  <label class="text-sm font-medium leading-none" for="name">Name</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none" for="name">Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Your full name"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                     required
                   />
                 </div>
 
                 {/* <!-- Phone Number --> */}
-                <div class="space-y-2">
-                  <label class="text-sm font-medium leading-none" for="phone">Phone Number</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none" for="phone">Phone Number</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     placeholder="Your phone number"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                     required
                   />
                 </div>
 
                 {/* <!-- Car Type --> */}
-                <div class="space-y-2">
-                  <label class="text-sm font-medium leading-none" for="car-type">Car Type</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none" for="car-type">Car Type</label>
                   <select
                     id="car-type"
                     name="car_type"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm">
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm">
                     <option value="">Select car type</option>
                     <option value="hatchback">Hatchback</option>
                     <option value="sedan">Sedan</option>
@@ -60,12 +60,12 @@ export default function Booking() {
                 </div>
 
                 {/* <!-- Service Type --> */}
-                <div class="space-y-2">
-                  <label class="text-sm font-medium leading-none" for="service-type">Service Type</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none" for="service-type">Service Type</label>
                   <select
                     id="service-type"
                     name="service_type"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                   >
                     <option value="">Select service</option>
                     <option value="exterior">Exterior Wash (₹299)</option>
@@ -77,24 +77,24 @@ export default function Booking() {
                 </div>
 
                 {/* <!-- Preferred Date --> */}
-                <div class="space-y-2 flex flex-col">
-                  <label class="text-sm font-medium leading-none" for="preferred-date">Preferred Date</label>
+                <div className="space-y-2 flex flex-col">
+                  <label className="text-sm font-medium leading-none" for="preferred-date">Preferred Date</label>
                   <input
                     type="date"
                     id="preferred-date"
                     name="preferred_date"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                     required
                   />
                 </div>
 
                 {/* <!-- Preferred Time --> */}
-                <div class="space-y-2">
-                  <label class="text-sm font-medium leading-none" for="preferred-time">Preferred Time</label>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium leading-none" for="preferred-time">Preferred Time</label>
                   <select
                     id="preferred-time"
                     name="preferred_time"
-                    class="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
+                    className="flex h-10 w-full rounded-lg border-input border border-slate-200 focus:outline-none bg-background px-3 py-2 mt-2 text-base md:text-sm"
                   >
                     <option value="">Select time</option>
                     <option value="8am">8:00 AM</option>

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer pb-8 pt-16 text-white bg-primary">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
+      <div className="max-w-screen-xl w-full mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 text-center md:text-left w-full md:w-auto">
           {/* footer-first-col */}
           <div className="space-y-4 footer-col">
             <a className="inline-block" href="/">
@@ -13,11 +13,11 @@ export default function Footer() {
               </h3>
             </a>
 
-            <p className="text-gray-300 text-base">
+            <p className="text-gray-300 lg:text-base text-sm">
               Professional car cleaning services at your doorstep. Fast, affordable, and eco-friendly.
             </p>
 
-            <div className="flex justify-center sm:justify-start space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <a href="#" className="text-white hover:text-secondary transition facebook-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
               </a>
@@ -37,19 +37,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 links-list">
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Home</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Home</Link>
               </li>
               <li className="list-item">
-                <Link to="/services" className="text-gray-300 hover:text-secondary transition text-base">Services</Link>
+                <Link to="/services" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Services</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">About Us</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">About Us</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Blog</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Blog</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Contact</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Contact</Link>
               </li>
             </ul>
           </div>
@@ -61,19 +61,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 links-list">
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary text-base">Exterior Wash</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary lg:text-base text-sm">Exterior Wash</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Interior Detailing</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Interior Detailing</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Steam Sanitization</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Steam Sanitization</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Full Car Detailing</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Full Car Detailing</Link>
               </li>
               <li className="list-item">
-                <Link to="/" className="text-gray-300 hover:text-secondary transition text-base">Monthly Maintenance</Link>
+                <Link to="/" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm">Monthly Maintenance</Link>
               </li>
             </ul>
           </div>
@@ -84,34 +84,34 @@ export default function Footer() {
               Contact Us
             </h4>
             <ul className="space-y-3 links-list">
-              <li className="flex flex-col sm:flex-row sm:items-start gap-3 list-item">
-                <div className="flex gap-3 justify-center sm:justify-start">
+              <li className="flex flex-col md:flex-row md:items-start gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
-                  <a href="#" className="text-gray-300 hover:text-secondary transition text-base">
+                  <a href="#" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm md:w-48">
                     +91-8989XXXXXX
                   </a>
                 </div>
               </li>
-              <li className="flex flex-col sm:flex-row sm:items-start gap-3 list-item">
-                <div className="flex gap-3 justify-center sm:justify-start">
+              <li className="flex flex-col md:flex-row md:items-start gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-                  <a href="#" className="text-gray-300 hover:text-secondary transition text-base">
+                  <a href="#" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm md:w-48">
                     support@carguyz.in
                   </a>
                 </div>
               </li>
-              <li className="flex flex-col sm:flex-row sm:items-start gap-3 list-item">
-                <div className="flex gap-3 justify-center sm:justify-start">
+              <li className="flex flex-col md:flex-row md:items-start gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-                  <a href="#" className="text-gray-300 hover:text-secondary transition text-base">
+                  <a href="#" className="text-gray-300 hover:text-secondary transition lg:text-base text-sm md:w-48">
                     Delhi NCR, Bengaluru, Hyderabad
                   </a>
                 </div>
               </li>
-              <li className="flex flex-col sm:flex-row sm:items-start gap-3 list-item">
-                <div className="flex gap-3 justify-center sm:justify-start">
+              <li className="flex flex-col md:flex-row md:items-start gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ec4b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock-icon lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  <span className="text-gray-300 hover:text-secondary transition text-base">
+                  <span className="text-gray-300 hover:text-secondary transition lg:text-base text-sm md:w-48">
                     8 AM – 8 PM (7 Days)
                   </span>
                 </div>
@@ -123,7 +123,7 @@ export default function Footer() {
         <hr className="border-t border-gray-700 w-full my-8" />
 
         <div className="copyright-block text-center text-gray-400 w-full">
-          <p className="text-base">&copy; 2025 CarGuyz. All rights reserved.</p>
+          <p className="lg:text-base text-sm">&copy; 2025 CarGuyz. All rights reserved.</p>
         </div>
       </div>
     </footer>

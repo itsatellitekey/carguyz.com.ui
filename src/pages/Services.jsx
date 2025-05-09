@@ -6,7 +6,7 @@ import CardItem from "../components/CardItem/CardItem.jsx";
 import FaqItem from "../components/FaqItem/FaqItem.jsx";
 import { CarFront, Droplets, Sparkles } from "lucide-react";
 
-const services = [
+const ServicesInfo = [
     {
       title: "Exterior Wash",
       description:
@@ -37,14 +37,14 @@ export default function Services() {
             {/* Hero Section */}
             <HeroSection
                 title="Our Services"
-                description="Professional car cleaning services tailored to your needs, delivered right to your doorstep."
+                subtitle="Professional car cleaning services tailored to your needs, delivered right to your doorstep."
             />
 
             {/* services section */}
             <section className="py-20 bg-light services-section">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-screen-xl mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service, index) => (
+                        {ServicesInfo.map((service, index) => (
                             <CardItem
                                 key={index}
                                 title={service.title}
@@ -61,7 +61,7 @@ export default function Services() {
 
             {/* Custom Quote section */}
             <section className="py-16 bg-white custom-quote">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-screen-xl mx-auto px-4">
                     <div className="bg-primary rounded-lg p-8 md:p-12 text-center">
                         <h2 className="text-3xl font-bold mb-4 text-white">Want a Custom Quote?</h2>
                         <p className="text-lg text-gray-200 mb-8 mx-auto">Need something specific or have multiple cars? We can create a customized cleaning plan just for you.</p>
@@ -80,7 +80,7 @@ export default function Services() {
             {/* Faq section */}
 
             <section className="py-20 bg-light faq-section">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-screen-xl mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl mb-4 text-primary font-semibold section-title">Frequently Asked Questions</h2>
                         <p className="mb-10 text-lg subtitle-text subtitle-color">Have questions about our services? Find quick answers below.</p>

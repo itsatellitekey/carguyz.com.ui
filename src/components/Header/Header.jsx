@@ -28,9 +28,9 @@ const Header = () => {
         }`}
     >
       {/* logo section */}
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="w-full max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4 sm:px-8">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-primary">
+          <span className="text-2xl font-semibold text-primary">
             Car<span className="text-secondary">Guyz</span>
           </span>
         </Link>
@@ -82,14 +82,14 @@ const Header = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white px-4 pb-4">
-          <nav className="flex flex-col space-y-3">
-            <Link to="/" className="text-gray-800 hover:text-secondary font-medium transition">Home</Link>
-            <Link to="/services" className="text-gray-800 hover:text-secondary font-medium transition">Services</Link>
-            <Link to="/booking" className="text-gray-800 hover:text-secondary font-medium transition">Book Now</Link>
-            <Link to="/about" className="text-gray-800 hover:text-secondary font-medium transition">About</Link>
-            <Link to="/blog" className="text-gray-800 hover:text-secondary font-medium transition">Blog</Link>
-            <Link to="/contact" className="text-gray-800 hover:text-secondary font-medium transition">Contact</Link>
+        <div className="md:hidden bg-white py-4 animate-fade-in">
+          <nav className="space-y-3 lg:container px-8 ">
+            <Link to="/" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">Home</Link>
+            <Link to="/services" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">Services</Link>
+            <Link to="/booking" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">Book Now</Link>
+            <Link to="/about" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">About</Link>
+            <Link to="/blog" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">Blog</Link>
+            <Link to="/contact" className="block px-4 py-2 text-gray-800 hover:bg-light hover:text-secondary rounded-md transition">Contact</Link>
             <Link to="/booking">
               <button className="mt-2 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium bg-primary text-white h-10 px-4 py-2 w-full">
                 Book Now

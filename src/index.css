@@ -1,5 +1,8 @@
-/* tailwind css */
+/* Tailwind v4 import
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";  */
 @import "tailwindcss";
+
 @plugin "daisyui";
 
 body {
@@ -14,56 +17,65 @@ h5 {
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+  --color-primary: #1D3557;
+  --color-secondary: #2EC4B6;
+  --color-secondary-90: #2ec4b6e6;
+  --color-light: #f9fafb;
+  --color-subtitle: #4b5563;
+  --color-primary-10: #1d35571a;
+  --color-feature-bg: #f4f8f9;
+  --t-arrow-border: #e2e8f0;
+  --color-transparent: #0000;
+}
+
 .text-primary {
-  color: #1D3557;
+  color: var(--color-primary);
 }
 
 .text-secondary {
-  color: #2EC4B6;
+  color: var(--color-secondary);
+}
+
+
+.subtitle-color {
+  color: var(--color-subtitle);
 }
 
 .bg-primary {
-  background-color: #1D3557;
+  background-color: var(--color-primary);
 }
 
 .bg-secondary {
-  background-color: #2EC4B6;
+  background-color: var(--color-secondary);
 }
 
-.border-secondary {
-  border-color: #2EC4B6;
+.bg-light {
+  background-color: var(--color-light);
 }
 
 .border-primary {
-  border-color: #1D3557;
+  border-color: var(--color-primary);
 }
 
-.text-primary {
-  color: #1d3557;
-}
-
-.text-secondary {
-  color: #2EC4B6;
+.border-secondary {
+  border-color: var(--color-secondary);
 }
 
 .hover\:text-secondary {
   &:hover {
     @media (hover: hover) {
-      color: #2EC4B6;
+      color: var(--color-secondary);
     }
   }
 }
 
 .hover\:bg-secondary\/90:hover {
-  background-color: #2ec4b6e6;
+  background-color: var(--color-secondary-90);
 }
 
-.bg-light {
-  background-color: #f9fafb;
-}
-
-.subtitle-color {
-  color: #4b5563;
+.bg-primary\/10 {
+  background-color: var(--color-primary-10);
 }
 
 /* home page banner */
@@ -96,8 +108,8 @@ h5 {
 .testimonials .slick-next {
   width: 32px;
   height: 32px;
-  border: 1px solid #e2e8f0;
-  background: transparent;
+  border: 1px solid var(--t-arrow-border);
+  background: var(--color-transparent);
   border-radius: 50%;
   margin-top: 32px;
   top: 100%;
@@ -118,7 +130,7 @@ h5 {
 .testimonials .slick-prev:before,
 .testimonials .slick-next:before {
   font-size: 16px;
-  color: transparent;
+  color: var(--color-transparent);
 }
 
 .testimonials .slick-next:before {
@@ -127,5 +139,17 @@ h5 {
 
 /* home feature cards section */
 section.feature-cards {
-  background-color: #f4f8f9;
+  background-color: var(--color-feature-bg);
+}
+
+/*contact page */
+
+.contact-page .map iframe {
+border: 0px;
+width: 100%;
+height: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
 }

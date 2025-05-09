@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const testimonials = [
+const Testimonials = [
   {
     name: "Rohit Sharma",
     location: "Delhi NCR",
@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
   return (
         <div className="max-w-4xl mx-auto pb-10">
           <Slider {...sliderSettings}>
-            {testimonials.map((t, idx) => (
+            {Testimonials.map((t, idx) => (
               <div key={idx}>
                 <div className="rounded-lg border-none bg-card text-card-foreground p-8 text-center">
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-secondary">
