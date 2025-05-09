@@ -11,12 +11,12 @@ export default function Blog() {
             {/* Hero Section */}
             <HeroSection
                 title="Car Care Tips & News"
-                description="Expert advice, insider tips, and the latest updates from the world of car care."
+                subtitle="Expert advice, insider tips, and the latest updates from the world of car care."
             />
 
             {/* blogs section */}
             <section className="py-16 bg-light blogs-section">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-screen-xl mx-auto px-4">
                     <BlogCard />
                 </div>
 
@@ -24,7 +24,7 @@ export default function Blog() {
 
             {/* newsletter subscription */}
             <section className="py-16 bg-white newsletter-subscription">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-screen-xl mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl mb-4 text-primary font-semibold section-title">Stay Updated</h2>
                         <p className="mb-10 text-lg subtitle-text subtitle-color">Subscribe to our newsletter for the latest car care tips, special offers, and industry news.</p>

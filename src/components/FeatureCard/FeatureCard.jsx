@@ -1,6 +1,6 @@
 import { CarFront, LeafyGreen, Timer, User } from "lucide-react";
 
-const features = [
+const Features = [
   {
     title: "Convenience at Your Doorstep",
     description: "We come to your location - home, office, or anywhere you need us. No more waiting in lines.",
@@ -27,9 +27,9 @@ const features = [
 export default function FeatureSection() {
   return (
     <section className="features">
-      <div className="container mx-auto px-4">
+      <div className="w-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
+          {Features.map((feature, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-lg shadow-md text-center transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1"

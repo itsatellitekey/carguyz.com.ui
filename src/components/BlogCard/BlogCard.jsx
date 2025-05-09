@@ -5,7 +5,7 @@ import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import blog4 from "../../assets/images/blog4.jpg";
 
-const blogs = [
+const Blogs = [
     {
         image: blog1,
         date: "April 15, 2023",
@@ -47,7 +47,7 @@ const blogs = [
 export default function BlogCard() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 blog-grid">
-            {blogs.map((blog, index) => (
+            {Blogs.map((blog, index) => (
                 <div key={index} className="rounded-lg border border-slate-200 bg-card shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 blog-box">
                     <div className="h-48 overflow-hidden blog-img">
                         <img

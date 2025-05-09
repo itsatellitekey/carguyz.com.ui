@@ -9,7 +9,7 @@ export default function Home() {
         <div>
             {/* Banner Section */}
             <section className="relative bg-cover bg-center h-screen flex items-center banner-section">
-                <div className="container mx-auto px-4 h-full flex items-center">
+                <div className="w-full max-w-screen-xl mx-auto px-4 h-full flex items-center">
                     <div className="max-w-3xl text-white">
                         <div className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold mb-4 bg-secondary text-white">
                             Premium Car Care
@@ -52,7 +52,7 @@ export default function Home() {
 
 
             <section className="py-20 bg-primary app-download">
-                <div className="container mx-auto px-4 text-center">
+                <div className="w-full max-w-screen-xl mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white section-title">
                         Ready for a Cleaner Ride?
                     </h2>

@@ -5,7 +5,7 @@ const CardItem = ({ title, description, price, Icon, showButton = true }) => {
   const isAboutPage = location.pathname === "/about";
   return (
     <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between hover:shadow-lg transition-all duration-300">
-      <div>
+      <div className="card-inner">
       <div className={
           isAboutPage
             ? "mb-4 bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center" // custom class for About page
